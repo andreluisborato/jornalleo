@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo News</title>
+    <style>
+        /* Estilos básicos para o jornal */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Removi a linha "}" que estava errada aqui */
+        
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center; /* Centraliza o texto e a imagem do logo */
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        /*Estilo notícia 1 */
+
+        #noticia1 {
+             margin: 10px;
+             font-size: 2em;
+             font-family: 'Courier New', Courier, monospace;
+             text-align: center;
+             text-decoration: underline;
+
+        }
+
+        /* Estilo para a imagem do logo */
+        #logo {
+            width: 200px; /* Define a largura do logo para 80px */
+            height: auto; /* Mantém a proporção da imagem */
+            margin-top: 10px; /* Adiciona um espaço acima do logo, se precisar */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .news-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .news-article {
+            flex: 1 1 300px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-article h2 {
+            margin-top: 0;
+        }
+        .news-article .content {
+            margin-top: 15px;
+        }
+        .news-article img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .news-article audio {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img id="logo" src="/logoleonews.png" alt="Logo Leo News">
+    </header>
+
+    <main class="container">
+        <section class="news-section">
+            <article class="news-article" style="flex: 1 1 100%;">
+                <h2 id="noticia1">Porcentagem de bullying na nossa escola!</h2>
+                <div class="content">
+                    <img src="/bullying.png" alt="Descrição da imagem">
+                </div>
+            </article>
+        </section>
+
+        <section class="news-section">
+
+            <article class="news-article">
+                <h2>Manchete da Notícia 1</h2>
+                <div class="content">
+                    <img src="https://via.placeholder.com/300x200?text=Imagem+da+Notícia+1" alt="Descrição da imagem 1">
+                    <p>Espaço para o texto da notícia 1. Fale sobre um assunto secundário aqui.</p>
+                </div>
+            </article>
+
+            <article class="news-article">
+                <h2>Manchete da Notícia 2 (Com Áudio)</h2>
+                <div class="content">
+                    <p>Este é um trecho de texto da notícia, acompanhado de um áudio exclusivo.</p>
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        Seu navegador não suporta a tag de áudio.
+                    </audio>
+                    <p>Espaço para mais texto sobre o áudio acima. Dê detalhes sobre o conteúdo ou a entrevista.</p>
+                </div>
+            </article>
+
+            <article class="news-article">
+                <h2>Manchete da Notícia 3</h2>
+                <div class="content">
+                    <img src="https://via.placeholder.com/300x200?text=Imagem+da+Notícia+3" alt="Descrição da imagem 3">
+                    <p>Espaço para o texto da notícia 3. Adicione mais informações aqui.</p>
+                </div>
+            </article>
+
+            </section>
+    </main>
+
+</body>
+</html>
